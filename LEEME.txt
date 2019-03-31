@@ -1,0 +1,33 @@
+Esta carpeta contiene los archivos correspondientes al código fuente y solución de la prueba de Ingreso a Conexia
+
+Por: Luis Quiroga
+Fecha: 2019-03-31
+
+La configuración del sistema en donde se desarrolló y se desplegó:
+
+Motor base de datos: PostgreSQL 10
+Manejador base de datos: pgAdmin4
+Versión de Java: Java SE Runtime Environment 1.8.0_101
+Servidor Web: Apache-tomcat 9.0.6
+Gestor proyectos Java: Apache-maven 3.5.3
+Framework MVC: Spring
+
+Los siguientes son los archivos encontrados:
+
+1. restaurant_db.sql
+Archivo que contiene las sentencias de creación de la base de datos, las tablas, constraints y algunos inserts en las tablas cliente, comprador y cocinero
+Los datos de prueba generados para insertar se crearon con la herramienta:
+https://www.mockaroo.com/
+
+2. restaurante-web.war
+Archivo generado para la distribución y despliegue del módulo Web, el cual debe ubicarse dentro de la carpeta webapps que se encuentra dentro del directorio
+de instalación de apache-tomcat estando detenido el servicio y una vez este se levante nuevamente, la aplicación se despliega.
+
+3. restaurante-web.zip
+Archivo comprimido que contiene el código fuente de la aplicación Web (capa de presentación y de cliente).
+
+4. restaurant-logica.zip
+Archivo comprimido que contiene los ficheros de código fuente de las capas de persistencia de datos, DAO's y lógica.
+En el archivo persistence.xml deben cambiarse los datos de conexión del servidor Postgres
+
+
